@@ -1,0 +1,39 @@
+/* --------------------------------------- */
+/* ----- Basic Setup ----- */
+/* --------------------------------------- */
+
+@font-face {
+    font-family: 'Now';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/Now-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Now';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Now-Medium.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --font-size-normal: 2.4rem;
+}
+
+html {
+    font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size-normal);
+    font-family: 'Now', sans-serif;
+    font-weight: 300;
+
+}
