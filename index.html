@@ -15,7 +15,7 @@
   <body>
     <!-- Header -->
 
-    <header class="header" role="banner">
+    <header class="header" role="banner" id="top">
       <nav class="nav row" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
@@ -128,7 +128,16 @@
           <h2>About Me</h2>
           <div class="about__content">
             <div class="about__text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id nostrum illo harum blanditiis, tenetur eum suscipit cupiditate in vel, ex quam quidem quos mollitia labore aut sunt eius ratione molestiae fuga veniam facere similique voluptate. Rerum facilis numquam veritatis accusamus eligendi tempora illum omnis temporibus quos cupiditate id deleniti, illo labore iure optio ex, consequuntur fugit quia? Qui dignissimos est, culpa vitae ad ex. Sit assumenda.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
+                nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
+                in vel, ex quam quidem quos mollitia labore aut sunt eius
+                ratione molestiae fuga veniam facere similique voluptate. Rerum
+                facilis numquam veritatis accusamus eligendi tempora illum omnis
+                temporibus quos cupiditate id deleniti, illo labore iure optio
+                ex, consequuntur fugit quia? Qui dignissimos est, culpa vitae ad
+                ex. Sit assumenda.
+              </p>
             </div>
 
             <div class="about__photo-container">
@@ -138,5 +147,34 @@
         </div>
       </section>
     </main>
+    <a href="#top" class="back-to-top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+
+    <script>
+      const backToTopButton = document.querySelector('.back-to-top')
+      let isBackToTopRendered = false
+
+      let alterStyles = (isBackToTopRendered) => {
+        backToTopButton.style.visibility = isBackToTopRendered ? 'visible' : 'hidden'
+        backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0
+        backToTopButton.style.transform = isBackToTopRendered ? 'scale(1)' : 'scale(0)'
+      }
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 1000) {
+          isBackToTopRendered = true
+          alterStyles(isBackToTopRendered)
+        }
+        else {
+          isBackToTopRendered = false
+          alterStyles(isBackToTopRendered)
+        }
+      })
+    </script>
   </body>
 </html>
