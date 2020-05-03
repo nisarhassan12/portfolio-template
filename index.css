@@ -177,10 +177,34 @@ p {
 }
 
 .nav__link {
+    position: relative;
     display: inline-block;
     padding: 1rem 2rem;
     text-decoration: none;
     color: inherit;
+    transition: all .2s;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--white);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link:hover {
+    color: var(--pink);
+}
+
+.nav__link:hover::after {
+    right: 0;
+    height: 2px;
+    background: var(--pink);
 }
 
 /* --------------------------------------- */
@@ -192,6 +216,7 @@ p {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .header__text {
