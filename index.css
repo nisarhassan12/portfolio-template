@@ -164,7 +164,6 @@ p {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
-    font-size: var(--font-size-normal);
 }
 
 .nav__items {
@@ -217,6 +216,7 @@ p {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-size: var(--font-size-normal);
 }
 
 .header__text {
