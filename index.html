@@ -18,9 +18,9 @@
     <header class="header" role="banner" id="top">
       <nav class="nav row" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
         </ul>
       </nav>
@@ -41,7 +41,7 @@
     <main role="main">
       <!-- Work -->
 
-      <section class="work">
+      <section class="work" id="work">
         <div class="row">
           <h2>My Work</h2>
           <div class="work__boxes">
@@ -123,7 +123,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="row">
           <h2>About Me</h2>
           <div class="about__content">
@@ -166,7 +166,7 @@
       }
 
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 1000) {
+        if (window.scrollY > 800) {
           isBackToTopRendered = true
           alterStyles(isBackToTopRendered)
         }
