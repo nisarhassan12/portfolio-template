@@ -9,12 +9,12 @@
     src: url('./fonts/HKGrotesk-Light.woff') format('woff');
 }
 
-/* @font-face {
+@font-face {
     font-family: 'HK Grotesk';
     font-style: normal;
-    font-weight: 600;
-    src: url('./fonts/HKGrotesk-SemiBold.woff') format('woff');
-} */
+    font-weight: 400;
+    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+}
 
 @font-face {
     font-family: 'HK Grotesk';
@@ -32,17 +32,19 @@
 :root {
     --font-size-normal: 2.4rem;
     --font-size-medium: 3rem;
+    --font-size-medium-1: 5rem;
     --font-size-large: 8rem;
-    --font-size-huge: 16rem;
+    --font-size-huge: 12rem;
     --font-stack: 'Hk Grotesk', sans-serif;
 
     --line-height-normal: 1.7;
-    --line-height-small: 1.1;
+    --line-height-small: 1.2;
 
     --black: #000;
-    --white: #fff;
+    --pink: #ff3258;
+    --white: #e5e5e6;
 
-    --container-max-width: 1200px;
+    --container-max-width: 1180px;
     --container-normal-width: 800px; 
 
     --gutter-huge: 12rem;
@@ -59,15 +61,15 @@ html {
 body {
     font-size: var(--font-size-normal);
     font-family: var(--font-stack);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white);
     line-height: var(--line-height-normal);
     background: var(--black);
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .row {
-    position: relative;
     max-width: var(--container-max-width);
     margin: 0 auto;
 }
@@ -88,18 +90,23 @@ h3 {
     line-height: var(--line-height-small);
 }
 
-h1 {
-    font-size: var(--font-size-huge);
-    text-transform: uppercase;
-    letter-spacing: 30px;
+.heading-primary {
+    line-height: 1;
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
 }
 
-.sub {
-    margin: var(--gutter-medium) 0;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    line-height: 2.2;
-    font-size: var(--font-size-normal);
+.heading-primary span {
+    display: block;
+}
+
+.heading-primary span:nth-of-type(2) {
+    margin: 3rem 0;
+}
+
+.heading-primary--sub {
+    font-weight: 400;
+    font-size: var(--font-size-medium);
 }
 
 h2 {
@@ -117,21 +124,64 @@ p {
 }
 
 /* --------------------------------------- */
+/* ----- Buttons and Links ----- */
+/* --------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 4.2rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid;
+    border-radius: 10rem;
+}
+
+.btn--pink {
+    background: var(--pink);
+    border-color: var(--pink);
+}
+
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--gutter-normal) 0;
+}
+
+.nav__items {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: var(--gutter-normal);
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
 
 .header {
-    position: relative;
+    background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .8)), url('./images/header.jpg');
     height: 100vh;
-    text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
-.header__text-box {
+.header__text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 
@@ -139,26 +189,4 @@ p {
 /* ----- Work ----- */
 /* --------------------------------------- */
 
-.work {
-}
 
-
-.work__box {
-    display: flex;
-}
-
-.work__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 0 0 35%;
-    margin-right: var(--gutter-medium);
-}
-
-.work__image-container {
-    flex: 1;
-}
-
-.work__image {
-    width: 100%;
-}
