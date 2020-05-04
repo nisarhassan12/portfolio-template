@@ -33,8 +33,8 @@
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
-    --font-size-medium-1: 3.6rem;
-    --font-size-large: 6rem;
+    --font-size-medium-1: 3.5rem;
+    --font-size-large: 5.5rem;
     --font-size-huge: 7.5rem;
     --font-stack: 'Hk Grotesk', sans-serif;
 
@@ -44,6 +44,8 @@
     --black: #000;
     --pink: #ff3258;
     --white: #e5e5e6;
+    --white-1: #e5e5e6da;
+
 
     --container-max-width: 1180px;
     --container-normal-width: 800px; 
@@ -64,7 +66,7 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--white);
+    color: var(--white-1);
     line-height: var(--line-height-normal);
     background: var(--black);
     overflow-x: hidden;
@@ -95,6 +97,7 @@ h3 {
     font-family: 'HK Grotesk', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
+    color: var(--white);
 }
 
 .heading-primary {
@@ -126,7 +129,7 @@ h2::after {
     content: '';
     display: block;
     height: 2px;
-    width: 14rem;
+    width: 12rem;
     background: var(--pink);
     margin: var(--gutter-normal) 0;
 }
@@ -151,6 +154,7 @@ p {
     color: inherit;
     border: 1px solid;
     border-radius: 10rem;
+    font-weight: 400;
 }
 
 .btn--pink {
@@ -278,16 +282,24 @@ p {
     margin-left: 10rem;
 }
 
-.work__image {
-    
+/* --------------------------------------- */
+/* ----- Clients ----- */
+/* --------------------------------------- */
+
+.client__logos {
+    display: flex;
+    justify-content: space-between;
+    filter: invert(100%) grayscale(100%) opacity(.8);
+}
+
+.client__logo {
+    height: 6.5rem;
+    max-width: 18rem;
 }
 
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
-
-.about {
-}
 
 .about__content {
     display: flex;
@@ -304,11 +316,9 @@ p {
     margin-right: var(--gutter-huge);
 }
 
-
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
-
 
 .footer {
     padding: var(--gutter-huge) 0;
