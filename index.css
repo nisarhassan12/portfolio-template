@@ -303,3 +303,23 @@ p {
     flex: 1;
     margin-right: var(--gutter-huge);
 }
+
+
+/* --------------------------------------- */
+/* ----- Footer ----- */
+/* --------------------------------------- */
+
+
+.footer {
+    padding: var(--gutter-huge) 0;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heart {
+    height: 2rem;
+    transform: translateY(3px);
+}
