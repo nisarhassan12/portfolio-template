@@ -44,7 +44,7 @@
     --black: #000;
     --pink: #ff3258;
     --white: #e5e5e6;
-    --white-1: #e5e5e6da;
+    --white-1: #e5e5e6ea;
 
 
     --container-max-width: 1180px;
@@ -148,6 +148,10 @@ p {
 /* ----- Buttons and Links ----- */
 /* --------------------------------------- */
 
+a {
+    color: var(--white);
+}
+
 .btn {
     display: inline-block;
     padding: 1rem 4.2rem;
@@ -165,10 +169,36 @@ p {
 }
 
 .link__text {
+    position: relative;
     display: inline-block;
+    padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--pink);
+    
+}
+
+.link__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    background: var(--white);
+    height: 100%;
+    z-index: -1;
+    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.link__text:hover::after {
+    right: 0;
+    background: var(--pink);
+}
+
+.link__text span {
+    padding-left: 1rem;
+    font-family: sans-serif;
 }
 
 /* ----- Back to Top ----- */
