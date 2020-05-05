@@ -48,7 +48,8 @@
 
 
     --container-max-width: 1180px;
-    --container-normal-width: 800px; 
+    --container-normal-width: 800px;
+    --container-medium-width: 700px; 
 
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
@@ -155,11 +156,19 @@ p {
     border: 1px solid;
     border-radius: 10rem;
     font-weight: 400;
+    border-color: var(--pink);
 }
 
 .btn--pink {
     background: var(--pink);
     border-color: var(--pink);
+}
+
+.link__text {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
 }
 
 /* ----- Back to Top ----- */
@@ -314,6 +323,14 @@ p {
 .about__photo-container {
     flex: 1;
     margin-right: var(--gutter-huge);
+}
+
+/* --------------------------------------- */
+/* ----- Contact ----- */
+/* --------------------------------------- */
+
+.contact__info {
+    max-width: var(--container-medium-width);
 }
 
 /* --------------------------------------- */
