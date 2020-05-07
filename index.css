@@ -3,25 +3,18 @@
 /* --------------------------------------- */
 
 @font-face {
-    font-family: 'HK Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    src: url('./fonts/HKGrotesk-Light.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
+    font-family: 'Hk Grotesk';
     font-style: normal;
     font-weight: 400;
     src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
 }
 
-/* @font-face {
-    font-family: 'HK Grotesk';
+@font-face {
+    font-family: 'Jost';
     font-style: normal;
-    font-weight: 800;
-    src: url('./fonts/HKGrotesk-Bold.woff') format('woff');
-} */
+    font-weight: 400;
+    src: url('./fonts/Jost-Regular.ttf') format('woff');
+}
 
 * {
     margin: 0;
@@ -86,7 +79,7 @@ section {
 img {
     object-fit: contain;
     max-width: 100%;
-}
+}Header
 
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
@@ -95,7 +88,7 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'HK Grotesk', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
@@ -150,6 +143,8 @@ p {
 
 a {
     color: var(--white);
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
 }
 
 .btn {
@@ -290,7 +285,7 @@ a {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .8)), url('./images/header.jpg');
+    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .85)), url('./images/header-1.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;

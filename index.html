@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap"
-      rel="stylesheet"
-    />
     <title>
       Syed Ali Hussnain | Freelance Web Developer from Pakistan.
     </title>
@@ -20,8 +16,12 @@
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
       <div class="header__text-box row">
@@ -39,7 +39,6 @@
     </header>
 
     <main role="main">
-
       <!-- ***** Work ***** -->
 
       <section class="work" id="work">
@@ -60,7 +59,9 @@
                   <li>MongoDB</li>
                 </ul>
 
-                <a href="#" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="#" class="link__text"
+                  >Visit Site <span>&rarr;</span></a
+                >
               </div>
               <div class="work__image-box">
                 <img
@@ -85,7 +86,9 @@
                   <li>MongoDB</li>
                 </ul>
 
-                <a href="#" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="#" class="link__text"
+                  >Visit Site <span>&rarr;</span></a
+                >
               </div>
               <div class="work__image-box">
                 <img
@@ -110,7 +113,9 @@
                   <li>MongoDB</li>
                 </ul>
 
-                <a href="#" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="#" class="link__text"
+                  >Visit Site <span>&rarr;</span></a
+                >
               </div>
               <div class="work__image-box">
                 <img
@@ -130,12 +135,36 @@
         <div class="row">
           <h2>Clients</h2>
           <div class="client__logos">
-            <img src="./images/ronjones.png" class="client__logo" alt="Company 2">
-            <img src="./images/goldengrid.png" class="client__logo" alt="Company 3">
-            <img src="./images/bullseye.png" class="client__logo" alt="Company 1">
-            <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1">
-            <img src="./images/fastlane.png" class="client__logo" alt="Company 3">
-            <img src="./images/chippy.png" class="client__logo" alt="Company 1">
+            <img
+              src="./images/ronjones.png"
+              class="client__logo"
+              alt="Company 2"
+            />
+            <img
+              src="./images/goldengrid.png"
+              class="client__logo"
+              alt="Company 3"
+            />
+            <img
+              src="./images/bullseye.png"
+              class="client__logo"
+              alt="Company 1"
+            />
+            <img
+              src="./images/mighty-furnitures.png"
+              class="client__logo"
+              alt="Company 1"
+            />
+            <img
+              src="./images/fastlane.png"
+              class="client__logo"
+              alt="Company 3"
+            />
+            <img
+              src="./images/chippy.png"
+              class="client__logo"
+              alt="Company 1"
+            />
           </div>
         </div>
       </section>
@@ -160,7 +189,11 @@
             </div>
 
             <div class="about__photo-container">
-              <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+              <img
+                class="about__photo"
+                src="./images/syed-ali-hussnain.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -170,16 +203,20 @@
     <!-- ***** Contact ***** -->
 
     <section class="contact" id="contact">
-        <div class="row">
-          <h2>Get in Touch</h2>
-          <div class="contact__info">
-            <p>
-              Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊
-              The quickest way to reach out to me is via an email.
-            </p>
-            <a href="mailto:you@example.com" class="btn">you@example.com</a>
-          </div>
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a fast-performing and user-friendly website to
+            represent your product or business? or looking for any kind of
+            consultation? or want to ask questions? or have some advice for me
+            or just want to say "Hi 👋" in any case feel free to Let me know. I
+            will do my best to respond back. 😊 The quickest way to reach out to
+            me is via an email.
+          </p>
+          <a href="mailto:you@example.com" class="btn">you@example.com</a>
         </div>
+      </div>
     </section>
 
     <!-- ***** Footer ***** -->
@@ -187,7 +224,11 @@
     <footer role="contentinfo" class="footer row">
       <div class="footer__info">
         <p>&copy; 2020. All rights reserved.</p>
-        <p>Crafted with <img src="./images/heart.svg" class="footer__heart" alt="Heart"> by Nisar.</p>
+        <p>
+          Crafted with
+          <img src="./images/heart.svg" class="footer__heart" alt="Heart" /> by
+          Nisar.
+        </p>
       </div>
     </footer>
 
@@ -200,25 +241,28 @@
     </a>
 
     <script>
-      const backToTopButton = document.querySelector('.back-to-top')
-      let isBackToTopRendered = false
+      const backToTopButton = document.querySelector(".back-to-top");
+      let isBackToTopRendered = false;
 
       let alterStyles = (isBackToTopRendered) => {
-        backToTopButton.style.visibility = isBackToTopRendered ? 'visible' : 'hidden'
-        backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0
-        backToTopButton.style.transform = isBackToTopRendered ? 'scale(1)' : 'scale(0)'
-      }
+        backToTopButton.style.visibility = isBackToTopRendered
+          ? "visible"
+          : "hidden";
+        backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+        backToTopButton.style.transform = isBackToTopRendered
+          ? "scale(1)"
+          : "scale(0)";
+      };
 
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         if (window.scrollY > 800) {
-          isBackToTopRendered = true
-          alterStyles(isBackToTopRendered)
+          isBackToTopRendered = true;
+          alterStyles(isBackToTopRendered);
+        } else {
+          isBackToTopRendered = false;
+          alterStyles(isBackToTopRendered);
         }
-        else {
-          isBackToTopRendered = false
-          alterStyles(isBackToTopRendered)
-        }
-      })
+      });
     </script>
   </body>
 </html>
