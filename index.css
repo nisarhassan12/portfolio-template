@@ -79,7 +79,7 @@ section {
 img {
     object-fit: contain;
     max-width: 100%;
-}Header
+}
 
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
@@ -271,7 +271,7 @@ a {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .85)), url('./images/header-1.jpg');
+    background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .1)), url('./images/header.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -291,7 +291,6 @@ a {
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
 }
-
 
 /* --------------------------------------- */
 /* ----- Work ----- */
