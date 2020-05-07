@@ -97,21 +97,7 @@ h3 {
 .heading-primary {
     line-height: 1;
     font-size: var(--font-size-huge);
-    margin-bottom: var(--gutter-medium);
     font-weight: 400;
-}
-
-.heading-primary span {
-    display: block;
-}
-
-.heading-primary span:nth-of-type(2) {
-    margin: 3rem 0;
-}
-
-.heading-primary--sub {
-    font-weight: 300;
-    font-size: var(--font-size-medium);
 }
 
 h2 {
@@ -297,6 +283,13 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__text p {
+    margin: 3.5rem 0;
+    max-width: var(--container-medium-width);
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-medium);
 }
 
 
