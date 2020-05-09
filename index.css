@@ -43,6 +43,7 @@
     --container-max-width: 1180px;
     --container-normal-width: 800px;
     --container-medium-width: 700px; 
+    --container-small-width: 500px;
 
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
@@ -55,6 +56,12 @@ html {
     font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+@media(max-width: 1000px) {
+    html {
+        font-size: 52%;
+    }
 }
 
 body {
@@ -70,6 +77,30 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+}
+
+@media(max-width: 1340px) {
+    .row {
+        max-width: 1100px;
+    }
+}
+
+@media(max-width: 1240px) {
+    .row {
+        padding: 0 var(--gutter-medium);
+    }
+}
+
+@media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-normal);
+    }
+}
+
+@media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-small);
+    }
 }
 
 section {
@@ -101,6 +132,18 @@ h3 {
     font-weight: 400;
 }
 
+@media(max-width: 900px) {
+    .heading-primary {
+        font-size: 6.5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .heading-primary {
+        font-size: var(--font-size-large);
+    }
+}
+
 h2 {
     font-size: var(--font-size-large);
     margin-bottom: var(--gutter-medium);
@@ -122,6 +165,12 @@ h3 {
 
 p {
     margin: var(--gutter-small-1) 0;
+}
+
+@media(max-width: 900px) {
+    p { 
+        max-width: var(--container-small-width);
+    }
 }
 
 /* --------------------------------------- */
@@ -230,6 +279,18 @@ a {
     height: 70%;
 }
 
+@media(max-width: 900px) {
+    .back-to-top {
+        right: 2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .back-to-top {
+        right: 1rem;
+    }
+}
+
 /* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
@@ -247,6 +308,24 @@ a {
 
 .nav__item:not(:last-child) {
     margin-right: var(--gutter-medium);
+}
+
+@media(max-width: 500px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .nav__item:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
+}
+
+@media(max-width: 300px) {
+    .nav {
+        font-size: var(--font-size-small);
+    }
 }
 
 .nav__link {
@@ -306,6 +385,16 @@ a {
     font-size: var(--font-size-medium);
 }
 
+@media(max-width: 500px) {
+    .header {
+        text-align: center;
+    }
+
+    .header__text p {
+        transform: scale(.8);
+    }
+}
+
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
@@ -313,6 +402,13 @@ a {
 .work__box {
     display: flex;
     align-items: center;
+}
+
+@media(max-width: 900px) {
+    .work__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
 }
 
 .work__box:not(:last-child) {
@@ -330,8 +426,14 @@ a {
 }
 
 .work__image-box {
-    flex: 1;
-    margin-left: 10rem;
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .work__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
 }
 
 /* --------------------------------------- */
@@ -349,6 +451,17 @@ a {
     max-width: 18rem;
 }
 
+@media(max-width: 1240px) {
+    .client__logos {
+        overflow-x: scroll;
+        padding: var(--gutter-normal);
+    }
+
+    .client__logo:not(:last-of-type) {
+        margin-right: var(--gutter-medium);
+    }
+}
+
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
@@ -359,13 +472,26 @@ a {
     align-items: center;
 }
 
-.about__text {
-    flex: 0 0 35%;
+@media(max-width: 900px) {
+    .about__content {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
 }
 
 .about__photo-container {
-    flex: 1;
-    margin-right: var(--gutter-huge);
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .about__text {
+        flex: 0 0 35%;
+    }
+    
+    .about__photo-container {
+        flex: 1;
+        margin: 0 var(--gutter-huge) 0 0;
+    }
 }
 
 /* --------------------------------------- */
@@ -387,6 +513,16 @@ a {
 .footer__info {
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width: 500px) {
+    .footer {
+        padding: var(--gutter-medium) 0;
+    } 
+
+    .footer__info {
+        flex-direction: column-reverse;
+    }
 }
 
 .footer__heart {
