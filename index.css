@@ -191,9 +191,8 @@ a {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid;
+    border: 1px solid  var(--pink);
     font-weight: 400;
-    border-color: var(--pink);
 }
 
 .btn::after {
@@ -366,7 +365,8 @@ a {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .1)), url('./images/header.png');
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
