@@ -535,7 +535,8 @@ a {
 
 .footer__github-buttons iframe {
     height: 2.5rem;
-    width: 10rem;
+    width: 80px;
+    transform: translateY(3px);
 }
 
 @media(max-width: 500px) {
