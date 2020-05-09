@@ -528,6 +528,16 @@ a {
     height: 4rem;
 }
 
+.footer__github-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__github-buttons iframe {
+    height: 2.5rem;
+    width: 10rem;
+}
+
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
