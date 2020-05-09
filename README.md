@@ -213,7 +213,6 @@ For changing the screenshot:
             src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" 
             frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
           </iframe>
-          <!-- <iframe title="Github Fork Count" class="header__github-button" src="https://ghbtns.com/github-btn.html?user=nisarhassan12&amp;repo=portfolio-template&amp;type=fork&amp;count=true" scrolling="0" frameborder="0" title="Fork Portfolio Template on GitHub"></iframe> -->
         </div>
     </div>
 </footer>

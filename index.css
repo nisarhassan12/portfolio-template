@@ -417,6 +417,11 @@ a {
     margin-bottom: 25rem;
 }
 
+.work__links {
+    display: flex;
+    align-items: center;
+}
+
 .work__text {
     flex: 0 0 30%;
 }
@@ -427,6 +432,12 @@ a {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__code {
+    display: block;
+    height: 3rem;
+    margin-left: var(--gutter-normal);
+}
+
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
@@ -435,6 +446,12 @@ a {
     .work__image-box {
         flex: 1;
         margin: 0 0 0 10rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .work__code {
+        height: 4rem;
     }
 }
 
