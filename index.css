@@ -47,6 +47,7 @@
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
     --gutter-normal: 3rem;
+    --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 }
 
@@ -120,7 +121,7 @@ h3 {
 }
 
 p {
-    margin: var(--gutter-small) 0;
+    margin: var(--gutter-small-1) 0;
 }
 
 /* --------------------------------------- */
