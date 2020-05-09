@@ -162,6 +162,19 @@ a {
     background: var(--pink);
 }
 
+.btn--pink {
+    background: var(--pink);
+    transition: all 0.2s;
+}
+
+.btn--pink::after {
+    display: none;
+}
+
+.btn--pink:hover {
+    background: transparent;
+}
+
 .link__text {
     position: relative;
     display: inline-block;
