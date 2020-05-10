@@ -430,6 +430,12 @@ a {
     margin-bottom: 25rem;
 }
 
+@media(max-width: 500px) {
+    .work__box:not(:last-child) {
+        margin-bottom: 20rem;
+    }
+}
+
 .work__links {
     display: flex;
     align-items: center;
@@ -453,6 +459,11 @@ a {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+    transition: all .2s ease-in;
+}
+
+.work__image-box:hover {
+    transform: scale(1.02);
 }
 
 @media(min-width: 901px) {
