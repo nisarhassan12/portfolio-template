@@ -191,6 +191,11 @@ a {
     color: var(--white);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
+    transition: all .2s;
+}
+
+.link:hover {
+    color: var(--pink);
 }
 
 .btn {
