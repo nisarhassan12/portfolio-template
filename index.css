@@ -36,8 +36,8 @@
 
     --black: #000;
     --pink: #ff3258;
-    --white: #e5e5e6;
-    --white-1: #e5e5e6ea;
+    --white: #f6eafae8;
+    --white-1: #e5e5e6da;
 
 
     --container-max-width: 1180px;
@@ -149,14 +149,14 @@ h2::after {
     content: '';
     display: block;
     height: 2px;
-    width: 12rem;
+    width: 10rem;
     background: var(--pink);
-    margin: var(--gutter-normal) 0;
+    margin: var(--gutter-small) 0;
 }
 
 h3 {
     font-size: var(--font-size-medium-1);
-    margin-bottom: var(--gutter-normal);
+    margin-bottom: var(--gutter-small);
 }
 
 @media(max-width: 500px) {
