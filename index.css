@@ -455,6 +455,11 @@ a {
     display: block;
     height: 3rem;
     margin-left: var(--gutter-normal);
+    transition: all .3s;
+}
+
+.work__code:hover {
+    transform: scale(1.2);
 }
 
 .work__image-box {
