@@ -459,11 +459,6 @@ a {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
-    transition: all .2s ease-in;
-}
-
-.work__image-box:hover {
-    transform: scale(1.02);
 }
 
 @media(min-width: 901px) {
