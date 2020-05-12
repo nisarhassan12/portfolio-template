@@ -446,7 +446,7 @@ a {
 }
 
 .work__list {
-    list-style-type: square;
+    /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
