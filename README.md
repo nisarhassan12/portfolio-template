@@ -125,10 +125,7 @@ For changing the screenshot:
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
                 nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
                 in vel, ex quam quidem quos mollitia labore aut sunt eius
-                ratione molestiae fuga veniam facere similique voluptate. Rerum
-                facilis numquam veritatis accusamus eligendi tempora illum omnis
-                temporibus quos cupiditate id deleniti, illo labore iure optio
-                ex, consequuntur fugit quia.
+                ratione molestiae fuga veniam facere similique voluptate.
                 </p>
                 <!-- Provide a link to your resume -->
                 <a href="#" class="btn">My Resume</a>
