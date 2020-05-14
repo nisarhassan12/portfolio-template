@@ -192,6 +192,21 @@ a {
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
+    outline: 2px solid transparent;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+button:focus,
+a:focus {
+    outline: 2px solid var(--pink);
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) a:focus {
+    outline: none;
 }
 
 .link:hover {
@@ -208,6 +223,10 @@ a {
     font-weight: 400;
 }
 
+.btn:focus {
+    outline: none;
+}
+
 .btn::after {
     content: '';
     display: block;
@@ -221,7 +240,8 @@ a {
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.btn:hover::after {
+.btn:hover::after,
+.btn:focus::after {
     right: 0;
     background: var(--pink);
 }
@@ -235,7 +255,8 @@ a {
     display: none;
 }
 
-.btn--pink:hover {
+.btn--pink:hover,
+.btn--pink:focus {
     background: transparent;
 }
 
@@ -261,7 +282,12 @@ a {
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.link__text:hover::after {
+.link__text:focus {
+    outline: none;
+}
+
+.link__text:hover::after,
+.link__text:focus:after {
     right: 0;
     background: var(--pink);
 }
