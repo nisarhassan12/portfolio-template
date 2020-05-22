@@ -113,6 +113,7 @@ section {
 img {
     object-fit: contain;
     max-width: 100%;
+    
 }
 
 /* --------------------------------------- */
@@ -404,8 +405,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .4)), 
+        url('./images/sydney.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -505,31 +506,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
@@ -538,18 +514,19 @@ body:not(.user-is-tabbing) a:focus {
 .about__content {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 @media(max-width: 900px) {
     .about__content {
         flex-direction: column-reverse;
-        align-items: initial;
+        align-items: center;
     }
 }
 
 .about__photo-container {
-    margin-bottom: var(--gutter-normal);
+    margin-bottom: var(--gutter-small);
+    
 }
 
 @media(min-width: 901px) {
@@ -562,6 +539,8 @@ body:not(.user-is-tabbing) a:focus {
         margin: 0 var(--gutter-huge) 0 0;
     }
 }
+
+
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
