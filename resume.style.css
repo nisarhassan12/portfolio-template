@@ -8,11 +8,12 @@ html {
 }
 
 .container__first {
-    background-color: #048243;
+    background-color: #343837;
 }
 
 .top {
-    background-image: linear-gradient(rgba(0, 82, 73, .3), rgba(10, 72, 30, .3));
+    background-color:  #0CB577 ;
+
 }
 
 .name {
@@ -31,7 +32,7 @@ html {
 
 
 .title {
-    background-color: #111;
+    background-color: #444;
     color: #fff;
 }
 
@@ -60,3 +61,7 @@ html {
     padding-left: 1.5rem;
 }
 
+.background {
+    background-color: #fff;
+    color: #444;
+}
