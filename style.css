@@ -34,7 +34,7 @@ body {
   padding: 3rem;
   max-width: 90%;
   max-height: 90%;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 @media(min-width: 1800px) {
@@ -61,7 +61,12 @@ body {
   }
 }
 
-
+.blog {
+  color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 28px;
+    margin: 3rem 4rem;
+}
 
 .container { 
     margin-left: 4rem;
@@ -78,6 +83,7 @@ body {
 @media(max-width: 1200px) {
   .container {
     margin-left: 2rem;
+    margin: 2rem 2rem;
   }
 }
 
@@ -91,17 +97,19 @@ body {
 
 .headerStyle  {
     background-color: #222;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     padding: 10px;
-       
+    display: flex;
+    justify-content: space-around;
+      
 }
 
 .linkStyle  {
     color: #fff;
     text-decoration: none;
-    font-size: 2rem;
     margin: 20px 20px;
+ 
       
 }
 
