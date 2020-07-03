@@ -263,7 +263,7 @@ body {
 .lists {
   margin: 10px 3rem;
   font-size: 2rem;
-  color: orangered;
+  color: #FF7052;
 }
 
 @media(max-width: 900px) {
