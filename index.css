@@ -38,6 +38,8 @@
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --DarkTurquoise:#00CED1;
+    --DarkGrey:#A9A9A9;
 
 
     --container-max-width: 1180px;
@@ -119,6 +121,9 @@ img {
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
 
+
+
+
 h1,
 h2,
 h3 {
@@ -136,9 +141,10 @@ h3 {
 
 @media(max-width: 900px) {
     .heading-primary {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
     }
 }
+
 
 h2 {
     font-size: var(--font-size-large);
@@ -180,6 +186,7 @@ p {
 @media(max-width: 900px) {
     p { 
         max-width: var(--container-small-width);
+        color: #A9A9A9;
     }
 }
 
@@ -308,7 +315,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--DarkTurquoise);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -415,7 +422,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
 }
 
@@ -424,6 +431,7 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
+    color: DarkTurquoise;
 }
 
 @media(max-width: 500px) {
