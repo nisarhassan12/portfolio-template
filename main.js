@@ -9,6 +9,7 @@
 //   this.isDeleting = false;
 // }
 
+
 // // Type Method
 // TypeWriter.prototype.type = function() {
 //   // Current index of word

@@ -12,6 +12,7 @@ const handleFirstTab = (e) => {
 
 }
 
+
 const handleMouseDownOnce = () => {
   document.body.classList.remove('user-is-tabbing')
 

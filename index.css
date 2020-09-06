@@ -420,6 +420,7 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+
 .header__text {
     position: absolute;
     top: 46%;
