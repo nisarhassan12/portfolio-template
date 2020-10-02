@@ -602,9 +602,9 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__github-buttons iframe {
-  height: 2.5rem;
-  width: 80px;
-  transform: translateY(3px);
+    height: 2.5rem;
+    width: 84px;
+    transform: translateY(3px);
 }
 
 @media (max-width: 500px) {
