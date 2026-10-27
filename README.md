@@ -229,3 +229,14 @@ For changing the screenshot:
     </div>
 </footer>
 ```
+
+## Deploy
+
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=nisarhassan12%2Fportfolio-template)
+
+Once you've edited the template, you can host it on [Wasmer Edge](https://docs.wasmer.io/edge/). The site is plain HTML, CSS and JavaScript, so there is no build step; the files are served as they are.
+
+1. Fork this repository (or push your edited copy) to your own GitHub account and make your changes there.
+2. Import your own repository on the Wasmer import page. The button above imports this original repository; it does not create a copy in your account.
+
+Note: the "Get in Touch" button is a `mailto:` link, so replace `you@example.com` with your email. The GitHub watch button in the footer loads from ghbtns.com; remove it as described in the Footer section above.
