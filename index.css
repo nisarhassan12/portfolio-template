@@ -248,6 +248,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn--pink {
     background: var(--pink);
+    color: #fff;
     transition: all 0.2s;
 }
 
